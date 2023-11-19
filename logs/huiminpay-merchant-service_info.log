@@ -3390,3 +3390,1272 @@ org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying b
             [Thread-24][DubboGenericServiceFactory.java:159] - The Dubbo GenericService ReferenceBeans are destroying...
 [huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:47,336 INFO
             [Thread-24][AnnotationInjectedBeanPostProcessor.java:305] - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:51,941 INFO
+            [main][:] - using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:51,947 INFO
+            [main][WelcomeLogoApplicationListener.java:63] - 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.3) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:51,950 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-service, dubbo.application.qos-enable=false, dubbo.application.qos.port=22240, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=90000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20890, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=com.huiminpay}
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:52,128 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c5f1c24b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:52,178 INFO
+            [pool-3-thread-1][AwaitingNonWebApplicationListener.java:140] -  [Dubbo] Current Spring Boot Application is await...
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,151 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-service, dubbo.application.qos-enable=false, dubbo.application.qos.port=22240, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=90000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20890, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=com.huiminpay}
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,230 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-http.yaml', group: 'COMMON_GROUP'
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,236 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-starter-druid.yaml', group: 'COMMON_GROUP'
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,248 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-mybatis-plus.yaml', group: 'COMMON_GROUP'
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,252 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'merchant-service.yaml', group: 'HUIMINPAY_GROUP'
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,253 INFO
+            [main][PropertySourceBootstrapConfiguration.java:98] - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource@1264941544 {name='merchant-service.yaml', properties={spring.datasource.druid.url=jdbc:mysql://127.0.0.1:3306/huiminpay_merchant_service?useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Shanghai&useSSL=false, server.servlet.context-path=/merchant-service, mybatis-plus.mapper-locations=classpath:com/huiminpay/*/mapper/*.xml, spring.datasource.druid.password=root, mybatis-plus.typeAliasesPackage=com.huiminpay.merchant.entity, spring.datasource.druid.username=root}}, NacosPropertySource@1878992188 {name='spring-boot-mybatis-plus.yaml', properties={mybatis-plus.global-config.field-strategy=0, mybatis-plus.global-config.db-column-underline=true, mybatis-plus.configuration.cache-enabled=false, mybatis-plus.global-config.refresh-mapper=true, mybatis-plus.mapper-locations=classpath:com/huimin/*/mapper/*.xml, mybatis-plus.typeAliasesPackage=com.huiminpay.merchant.entity, mybatis-plus.configuration.map-underscore-to-camel-case=true, mybatis-plus.global-config.id-type=0}}, NacosPropertySource@1818449913 {name='spring-boot-starter-druid.yaml', properties={spring.datasource.druid.max-active=20, spring.datasource.druid.min-idle=5, spring.datasource.druid.web-stat-filter.principal-cookie-name=admin, spring.datasource.druid.min-evictable-idle-time-millis=300000, spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver, spring.datasource.druid.test-on-return=false, spring.datasource.druid.time-between-eviction-runs-millis=60000, spring.datasource.druid.web-stat-filter.exclusions=*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*, spring.datasource.druid.filters=config,stat,wall,log4j2, spring.datasource.druid.filter.stat.slow-sql-millis=1, spring.datasource.druid.test-on-borrow=true, spring.datasource.druid.stat-view-servlet.login-password=admin, spring.datasource.druid.validation-query=SELECT 1 FROM DUAL, spring.datasource.druid.stat-view-servlet.url-pattern=/druid/*, spring.datasource.druid.web-stat-filter.session-stat-enable=false, spring.datasource.druid.test-while-idle=true, spring.datasource.druid.max-pool-prepared-statement-per-connection-size=20, spring.datasource.druid.web-stat-filter.enabled=true, spring.datasource.druid.web-stat-filter.session-stat-max-count=1000, spring.datasource.druid.stat-view-servlet.reset-enable=false, spring.datasource.druid.filter.stat.log-slow-sql=true, spring.datasource.druid.web-stat-filter.url-pattern=/*, spring.datasource.druid.stat-view-servlet.allow=127.0.0.1, spring.datasource.druid.web-stat-filter.principal-session-name=admin, spring.datasource.druid.web-stat-filter.profile-enable=true, spring.datasource.password=root, spring.datasource.username=root, spring.datasource.druid.stat-view-servlet.deny=127.0.0.1, spring.datasource.druid.stat-view-servlet.login-username=admin, spring.datasource.druid.stat-view-servlet.enabled=true, spring.datasource.url=jdbc:mysql://localhost:3306/oauth?useUnicode=true, spring.datasource.druid.initial-size=5, spring.datasource.druid.pool-prepared-statements=true, spring.datasource.druid.aop-patterns=com.huiminpay.*.service.*, spring.datasource.type=com.alibaba.druid.pool.DruidDataSource, spring.datasource.druid.max-wait=60000}}, NacosPropertySource@1495161082 {name='spring-boot-http.yaml', properties={management.endpoints.web.exposure.include=refresh,health,info,env, http.encoding.enabled=true, http.messages.encoding=UTF‐8, server.use‐forward-headers=true, server.servlet.context-path=/, http.encoding.charset=UTF‐8, server.tomcat.protocol_header=x‐forwarded‐proto, server.tomcat.remote_ip_header=x‐forwarded‐for, http.encoding.force=true}}]}
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,268 INFO
+            [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,544 DEBUG
+            [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,628 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,629 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,643 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ApplicationConfig] within prefix [dubbo.applications]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,643 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ModuleConfig] within prefix [dubbo.modules]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,644 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.RegistryConfig] within prefix [dubbo.registries]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,644 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProtocolConfig] within prefix [dubbo.protocols]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,644 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MonitorConfig] within prefix [dubbo.monitors]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,644 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProviderConfig] within prefix [dubbo.providers]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,644 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ConsumerConfig] within prefix [dubbo.consumers]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,644 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.spring.ConfigCenterBean] within prefix [dubbo.config-centers]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,644 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MetadataReportConfig] within prefix [dubbo.metadata-reports]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,645 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,645 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,645 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ModuleConfig] within prefix [dubbo.module]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,645 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,646 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,646 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,646 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,646 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MonitorConfig] within prefix [dubbo.monitor]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,646 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProviderConfig] within prefix [dubbo.provider]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,646 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, class : org.apache.dubbo.config.ConsumerConfig] has been registered.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,646 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ConsumerConfig#0] has been registered.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,646 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.spring.ConfigCenterBean] within prefix [dubbo.config-center]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,647 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MetadataReportConfig] within prefix [dubbo.metadata-report]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,748 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,786 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:204] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,786 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:206] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,790 DEBUG
+            [main][ClassPathScanningCandidateComponentProvider.java:437] - Identified candidate component class: file [E:\Java_learning\JavaTraining\Code\Idea_Code\huiminpay\huiminpay\huiminpay-merchant\huiminpay-merchant-service\target\classes\com\huiminpay\merchant\service\MerchantServiceImpl.class]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,800 DEBUG
+            [main][ClassPathScanningCandidateComponentProvider.java:437] - Identified candidate component class: file [E:\Java_learning\JavaTraining\Code\Idea_Code\huiminpay\huiminpay\huiminpay-merchant\huiminpay-merchant-service\target\classes\com\huiminpay\merchant\service\MerchantServiceImpl.class]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,806 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:284] -  [DUBBO] The BeanDefinition[Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:com.huiminpay.merchant.api.MerchantService, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,806 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:161] -  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'merchantServiceImpl': Generic bean: class [com.huiminpay.merchant.service.MerchantServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\Java_learning\JavaTraining\Code\Idea_Code\huiminpay\huiminpay\huiminpay-merchant\huiminpay-merchant-service\target\classes\com\huiminpay\merchant\service\MerchantServiceImpl.class]] } were scanned under package[com.huiminpay], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,808 INFO
+            [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,808 INFO
+            [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,884 INFO
+            [main][GenericScope.java:294] - BeanFactory id=9127c345-1069-371c-998d-fd3ffd8cb138
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,905 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:53,972 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9d7bf4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,105 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,111 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,113 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration$$EnhancerBySpringCGLIB$$2d990e52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,125 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubbo.cloud-com.alibaba.cloud.dubbo.env.DubboCloudProperties' of type [com.alibaba.cloud.dubbo.env.DubboCloudProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,134 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'metadataJsonResolver' of type [com.alibaba.cloud.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,145 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.config.ApplicationConfig#0' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,149 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboProtocolConfigSupplier' of type [com.alibaba.cloud.dubbo.metadata.DubboProtocolConfigSupplier] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,150 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,150 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration$$EnhancerBySpringCGLIB$$9fd8aacc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,154 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration$$EnhancerBySpringCGLIB$$3282b324] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,157 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboGenericServiceFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,160 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboMetadataConfigServiceProxy' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,165 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$f2c7ecde] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,169 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$e692f5a3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,178 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.commons.util.UtilAutoConfiguration' of type [org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$718588d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,185 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtilsProperties' of type [org.springframework.cloud.commons.util.InetUtilsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,187 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtils' of type [org.springframework.cloud.commons.util.InetUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,993 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosProperties' of type [com.alibaba.cloud.nacos.NacosDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:54,997 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosDiscoveryClient' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:55,009 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' of type [org.springframework.boot.autoconfigure.web.ServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:55,012 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$bef685ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:55,920 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryProperties' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:55,923 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryClient' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:55,925 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'compositeDiscoveryClient' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:55,928 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.util.JSONUtils' of type [com.alibaba.cloud.dubbo.util.JSONUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:55,971 WARN
+            [main][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:55,971 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository' of type [com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:55,991 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,001 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties' of type [org.springframework.boot.autoconfigure.http.HttpProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,004 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$f7195182] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,009 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'stringHttpMessageConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,012 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$30ef4d82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,015 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$56b3edf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,021 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$b7b800f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,024 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$72cee6e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,028 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,031 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,036 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$999a5e15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,044 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,047 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$e776dc6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,054 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,057 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,073 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,080 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'mappingJackson2HttpMessageConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,084 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$c40b8ae2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,088 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'messageConverters' of type [org.springframework.boot.autoconfigure.http.HttpMessageConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,091 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,095 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,098 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,098 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,107 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,111 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,113 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,115 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,121 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c5f1c24b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,362 INFO
+            [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 56040 (http)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,371 INFO
+            [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-56040"]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,384 INFO
+            [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,385 INFO
+            [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,389 INFO
+            [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\DevelopTools\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\DevelopTools\Java\jdk1.8.0_131\bin;C:\Program Files\Common Files\Oracle\Java\javapath;D:\DevelopTools\oraclexe\app\oracle\product\10.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\CommonlyUsedSoftware\Bandizip\;D:\DevelopTools\apache-maven-3.6.0;D:\DevelopTools\apache-maven-3.6.0\bin;D:\DevelopTools\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;;D:\DevelopTools\nodejs\;D:\DevelopTools\Tencent\微信web开发者工具\dll;C:\Program Files (x86)\Tencent\微信web开发者工具\dll;C:\Program Files\Docker\Docker\resources\bin;C:\Users\a1833\AppData\Local\Microsoft\WindowsApps;D:\DevelopTools\MySQL\MySQL Server 8.0\bin;%M2_HOME%\bin;D:\DevelopTools\Microsoft VS Code\Microsoft VS Code\bin;D:\DevelopTools\IntelliJ IDEA 2022.3.3\bin;;C:\Users\a1833\AppData\Roaming\npm;.]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,499 INFO
+            [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,499 INFO
+            [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 3225 ms
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:56,827 INFO
+            [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,001 DEBUG
+            [main][Log4j2Filter.java:132] - {conn-10001,procId-1673} connected
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,008 DEBUG
+            [main][Log4j2Filter.java:132] - {conn-10002,procId-1674} connected
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,022 DEBUG
+            [main][Log4j2Filter.java:132] - {conn-10003,procId-1675} connected
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,027 DEBUG
+            [main][Log4j2Filter.java:132] - {conn-10004,procId-1676} connected
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,033 DEBUG
+            [main][Log4j2Filter.java:132] - {conn-10005,procId-1677} connected
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,037 INFO
+            [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,627 DEBUG
+            [main][GlobalConfigUtils.java:106] - DeBug: MyBatis Plus Global configuration Initializing !
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,632 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.SelectList
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,632 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.SelectObjs
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,633 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.Insert
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,633 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.Update
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,634 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.Delete
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,634 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.baomidou.mybatisplus.core.mapper.SqlRunner.Count
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,657 DEBUG
+            [main][VFS.java:77] - Using VFS adapter com.baomidou.mybatisplus.autoconfigure.SpringBootVFS
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,658 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class com.huiminpay.merchant.entity.App matches criteria [is assignable to Object]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,660 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class com.huiminpay.merchant.entity.Merchant matches criteria [is assignable to Object]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,660 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class com.huiminpay.merchant.entity.Staff matches criteria [is assignable to Object]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,661 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class com.huiminpay.merchant.entity.Store matches criteria [is assignable to Object]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,661 DEBUG
+            [main][ResolverUtil.java:256] - Checking to see if class com.huiminpay.merchant.entity.StoreStaff matches criteria [is assignable to Object]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,666 DEBUG
+            [main][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,669 DEBUG
+            [main][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,710 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.insert
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,713 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.delete
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,715 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.deleteByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,725 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.deleteById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,726 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.deleteBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,728 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.update
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,730 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.updateById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,731 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,732 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,733 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,735 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectOne
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,736 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectCount
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,737 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectMaps
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,739 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectMapsPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,740 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectObjs
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,741 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectList
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,743 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.AppMapper.selectPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,747 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.insert
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,749 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.delete
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,751 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.deleteByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,752 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.deleteById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,753 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.deleteBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,754 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.update
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,755 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.updateById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,755 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,756 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,757 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,758 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectOne
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,760 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectCount
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,761 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectMaps
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,762 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectMapsPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,763 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectObjs
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,764 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectList
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,765 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.MerchantMapper.selectPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,768 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.insert
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,768 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.delete
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,770 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.deleteByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,771 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.deleteById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,772 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.deleteBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,773 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.update
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,774 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.updateById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,775 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,775 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,776 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,777 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectOne
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,778 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectCount
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,779 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectMaps
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,780 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectMapsPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,781 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectObjs
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,782 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectList
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,783 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StaffMapper.selectPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,785 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.insert
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,786 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.delete
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,787 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.deleteByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,788 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.deleteById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,788 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.deleteBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,791 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.update
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,792 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.updateById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,792 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,793 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,794 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,795 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectOne
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,795 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectCount
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,796 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectMaps
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,797 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectMapsPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,798 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectObjs
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,798 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectList
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,800 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreMapper.selectPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,802 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.insert
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,803 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.delete
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,804 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.deleteByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,805 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.deleteById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,806 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.deleteBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,807 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.update
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,808 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.updateById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,808 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectById
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,809 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectBatchIds
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,809 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectByMap
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,810 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectOne
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,811 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectCount
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,811 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectMaps
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,812 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectMapsPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,813 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectObjs
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,814 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectList
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,815 DEBUG
+            [main][MybatisConfiguration.java:85] - addMappedStatement: com.huiminpay.merchant.mapper.StoreStaffMapper.selectPage
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,832 WARN
+            [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,832 INFO
+            [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,834 WARN
+            [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,835 INFO
+            [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,860 DEBUG
+            [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,861 DEBUG
+            [main][ResourceBundleMessageInterpolator.java:89] - Loaded expression factory via original TCCL
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,866 DEBUG
+            [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,867 DEBUG
+            [main][ConfigurationImpl.java:148] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,867 DEBUG
+            [main][ConfigurationImpl.java:180] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,867 DEBUG
+            [main][ConfigurationImpl.java:194] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,868 DEBUG
+            [main][ValidationXmlParser.java:120] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,868 DEBUG
+            [main][ResourceLoaderHelper.java:53] - Trying to load META-INF/validation.xml via user class loader
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,868 DEBUG
+            [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via TCCL
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,868 DEBUG
+            [main][ResourceLoaderHelper.java:66] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,869 DEBUG
+            [main][ValidationXmlParser.java:127] - No META-INF/validation.xml found. Using annotation based configuration only.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,873 DEBUG
+            [main][ValidatorFactoryImpl.java:578] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,873 DEBUG
+            [main][ValidatorFactoryImpl.java:579] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,873 DEBUG
+            [main][ValidatorFactoryImpl.java:580] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,873 DEBUG
+            [main][ValidatorFactoryImpl.java:581] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,873 DEBUG
+            [main][ValidatorFactoryImpl.java:582] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:57,968 INFO
+            [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,198 INFO
+            [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,214 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,218 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,227 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,526 INFO
+            [main][EndpointLinksResolver.java:59] - Exposing 4 endpoint(s) beneath base path '/actuator'
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,579 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adaptive implements org.apache.dubbo.rpc.Protocol {
+public void destroy()  {
+throw new UnsupportedOperationException("The method public abstract void org.apache.dubbo.rpc.Protocol.destroy() of interface org.apache.dubbo.rpc.Protocol is not adaptive method!");
+}
+public int getDefaultPort()  {
+throw new UnsupportedOperationException("The method public abstract int org.apache.dubbo.rpc.Protocol.getDefaultPort() of interface org.apache.dubbo.rpc.Protocol is not adaptive method!");
+}
+public org.apache.dubbo.rpc.Exporter export(org.apache.dubbo.rpc.Invoker arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.Protocol) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.Protocol extension = (org.apache.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+public org.apache.dubbo.rpc.Invoker refer(java.lang.Class arg0, org.apache.dubbo.common.URL arg1) throws org.apache.dubbo.rpc.RpcException {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.Protocol) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.Protocol extension = (org.apache.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,620 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adaptive implements org.apache.dubbo.rpc.ProxyFactory {
+public java.lang.Object getProxy(org.apache.dubbo.rpc.Invoker arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+public java.lang.Object getProxy(org.apache.dubbo.rpc.Invoker arg0, boolean arg1) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0, arg1);
+}
+public org.apache.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, org.apache.dubbo.common.URL arg2) throws org.apache.dubbo.rpc.RpcException {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,660 INFO
+            [main][DubboServiceMetadataRepository.java:280] - The metadata of Dubbo service[name : merchant-application] is about to be initialized
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,702 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc.cluster;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adaptive implements org.apache.dubbo.rpc.cluster.Cluster {
+public org.apache.dubbo.rpc.Invoker join(org.apache.dubbo.rpc.cluster.Directory arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.cluster.Directory argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.cluster.Cluster) name from url (" + url.toString() + ") use keys([cluster])");
+org.apache.dubbo.rpc.cluster.Cluster extension = (org.apache.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,721 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,724 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,725 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,731 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.registry;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adaptive implements org.apache.dubbo.registry.RegistryFactory {
+public org.apache.dubbo.registry.Registry getRegistry(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.registry.RegistryFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.registry.RegistryFactory extension = (org.apache.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,735 INFO
+            [main][QosProtocolWrapper.java:89] -  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,735 WARN
+            [main][SpringExtensionFactory.java:86] -  [DUBBO] No spring extension (bean) named:applicationContext, try to find an extension (bean) of type org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,736 DEBUG
+            [main][SpringExtensionFactory.java:99] -  [DUBBO] Error when get spring extension(bean) for type:org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 192.168.70.136
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.context.ConfigurableApplicationContext' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at org.apache.dubbo.config.spring.extension.SpringExtensionFactory.getExtension(SpringExtensionFactory.java:94)
+	at org.apache.dubbo.common.extension.factory.AdaptiveExtensionFactory.getExtension(AdaptiveExtensionFactory.java:47)
+	at org.apache.dubbo.common.extension.ExtensionLoader.injectExtension(ExtensionLoader.java:566)
+	at org.apache.dubbo.common.extension.ExtensionLoader.createExtension(ExtensionLoader.java:535)
+	at org.apache.dubbo.common.extension.ExtensionLoader.getExtension(ExtensionLoader.java:351)
+	at org.apache.dubbo.registry.RegistryFactory$Adaptive.getRegistry(RegistryFactory$Adaptive.java)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:379)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:128)
+	at org.apache.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:70)
+	at org.apache.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:69)
+	at org.apache.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at org.apache.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:401)
+	at org.apache.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:329)
+	at org.apache.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:250)
+	at com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory.create(DubboGenericServiceFactory.java:80)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceInvocationHandler.<init>(DubboMetadataServiceInvocationHandler.java:41)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy.newProxy(DubboMetadataServiceProxy.java:83)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy.lambda$initProxy$0(DubboMetadataServiceProxy.java:52)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy.initProxy(DubboMetadataServiceProxy.java:51)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initDubboMetadataServiceProxy(DubboServiceMetadataRepository.java:640)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.lambda$null$4(DubboServiceMetadataRepository.java:619)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.lambda$initSubscribedDubboMetadataService$5(DubboServiceMetadataRepository.java:615)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initSubscribedDubboMetadataService(DubboServiceMetadataRepository.java:614)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initializeMetadata(DubboServiceMetadataRepository.java:286)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initializeMetadata(DubboServiceMetadataRepository.java:260)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.afterSingletonsInstantiated(DubboServiceMetadataRepository.java:253)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository$$FastClassBySpringCGLIB$$4ef4b7bd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository$$EnhancerBySpringCGLIB$$a7dfbae9.afterSingletonsInstantiated(<generated>)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.huiminpay.merchant.MerchantBootstrap.main(MerchantBootstrap.java:11)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,740 WARN
+            [main][SpringExtensionFactory.java:104] -  [DUBBO] No spring extension (bean) named:applicationContext, type:org.springframework.context.ConfigurableApplicationContext found, stop get bean., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,751 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc.cluster;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class RouterFactory$Adaptive implements org.apache.dubbo.rpc.cluster.RouterFactory {
+public org.apache.dubbo.rpc.cluster.Router getRouter(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.cluster.RouterFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.cluster.RouterFactory extension = (org.apache.dubbo.rpc.cluster.RouterFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.cluster.RouterFactory.class).getExtension(extName);
+return extension.getRouter(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,756 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=consumers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=19724&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700396158721&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,756 DEBUG
+            [main][AbstractSpringCloudRegistry.java:116] - The URL[consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=consumers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=19724&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700396158721&version=1.0.0] should not be registered.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,760 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=19724&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700396158721&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,772 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.remoting;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Transporter$Adaptive implements org.apache.dubbo.remoting.Transporter {
+public org.apache.dubbo.remoting.Client connect(org.apache.dubbo.common.URL arg0, org.apache.dubbo.remoting.ChannelHandler arg1) throws org.apache.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.remoting.Transporter) name from url (" + url.toString() + ") use keys([client, transporter])");
+org.apache.dubbo.remoting.Transporter extension = (org.apache.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(org.apache.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.connect(arg0, arg1);
+}
+public org.apache.dubbo.remoting.Server bind(org.apache.dubbo.common.URL arg0, org.apache.dubbo.remoting.ChannelHandler arg1) throws org.apache.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("server", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.remoting.Transporter) name from url (" + url.toString() + ") use keys([server, transporter])");
+org.apache.dubbo.remoting.Transporter extension = (org.apache.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(org.apache.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,782 DEBUG
+            [main][InternalLoggerFactory.java:43] - Using SLF4J as the default logging framework
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,784 DEBUG
+            [main][MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 24
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,798 DEBUG
+            [main][NioEventLoop.java:105] - -Dio.netty.noKeySetOptimization: false
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,798 DEBUG
+            [main][NioEventLoop.java:106] - -Dio.netty.selectorAutoRebuildThreshold: 512
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,800 DEBUG
+            [main][PlatformDependent.java:955] - Platform: Windows
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,801 DEBUG
+            [main][PlatformDependent0.java:395] - -Dio.netty.noUnsafe: false
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,802 DEBUG
+            [main][PlatformDependent0.java:871] - Java version: 8
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,802 DEBUG
+            [main][PlatformDependent0.java:120] - sun.misc.Unsafe.theUnsafe: available
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,803 DEBUG
+            [main][PlatformDependent0.java:144] - sun.misc.Unsafe.copyMemory: available
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,803 DEBUG
+            [main][PlatformDependent0.java:182] - java.nio.Buffer.address: available
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,803 DEBUG
+            [main][PlatformDependent0.java:243] - direct buffer constructor: available
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,804 DEBUG
+            [main][PlatformDependent0.java:313] - java.nio.Bits.unaligned: available, true
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,804 DEBUG
+            [main][PlatformDependent0.java:378] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,804 DEBUG
+            [main][PlatformDependent0.java:385] - java.nio.DirectByteBuffer.<init>(long, int): available
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,804 DEBUG
+            [main][PlatformDependent.java:992] - sun.misc.Unsafe: available
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,805 DEBUG
+            [main][PlatformDependent.java:1086] - -Dio.netty.tmpdir: C:\Users\a1833\AppData\Local\Temp (java.io.tmpdir)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,805 DEBUG
+            [main][PlatformDependent.java:1165] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,805 DEBUG
+            [main][PlatformDependent.java:157] - -Dio.netty.maxDirectMemory: 3780640768 bytes
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,806 DEBUG
+            [main][PlatformDependent.java:164] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,806 DEBUG
+            [main][CleanerJava6.java:92] - java.nio.ByteBuffer.cleaner(): available
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,807 DEBUG
+            [main][PlatformDependent.java:184] - -Dio.netty.noPreferDirect: false
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,808 DEBUG
+            [main][PlatformDependent.java:860] - org.jctools-core.MpscChunkedArrayQueue: available
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,826 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.remoting;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Dispatcher$Adaptive implements org.apache.dubbo.remoting.Dispatcher {
+public org.apache.dubbo.remoting.ChannelHandler dispatch(org.apache.dubbo.remoting.ChannelHandler arg0, org.apache.dubbo.common.URL arg1)  {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg1;
+String extName = url.getParameter("dispatcher", url.getParameter("dispather", url.getParameter("channel.handler", "all")));
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.remoting.Dispatcher) name from url (" + url.toString() + ") use keys([dispatcher, dispather, channel.handler])");
+org.apache.dubbo.remoting.Dispatcher extension = (org.apache.dubbo.remoting.Dispatcher)ExtensionLoader.getExtensionLoader(org.apache.dubbo.remoting.Dispatcher.class).getExtension(extName);
+return extension.dispatch(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,832 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.common.threadpool;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class ThreadPool$Adaptive implements org.apache.dubbo.common.threadpool.ThreadPool {
+public java.util.concurrent.Executor getExecutor(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("threadpool", "fixed");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.common.threadpool.ThreadPool) name from url (" + url.toString() + ") use keys([threadpool])");
+org.apache.dubbo.common.threadpool.ThreadPool extension = (org.apache.dubbo.common.threadpool.ThreadPool)ExtensionLoader.getExtensionLoader(org.apache.dubbo.common.threadpool.ThreadPool.class).getExtension(extName);
+return extension.getExecutor(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,848 DEBUG
+            [main][ResourceLeakDetector.java:129] - -Dio.netty.leakDetection.level: simple
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,849 DEBUG
+            [main][ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.targetRecords: 4
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,992 DEBUG
+            [main][PooledByteBufAllocator.java:126] - -Dio.netty.allocator.numHeapArenas: 24
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,993 DEBUG
+            [main][PooledByteBufAllocator.java:127] - -Dio.netty.allocator.numDirectArenas: 24
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,993 DEBUG
+            [main][PooledByteBufAllocator.java:129] - -Dio.netty.allocator.pageSize: 8192
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,993 DEBUG
+            [main][PooledByteBufAllocator.java:134] - -Dio.netty.allocator.maxOrder: 11
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,993 DEBUG
+            [main][PooledByteBufAllocator.java:138] - -Dio.netty.allocator.chunkSize: 16777216
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,993 DEBUG
+            [main][PooledByteBufAllocator.java:139] - -Dio.netty.allocator.tinyCacheSize: 512
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,993 DEBUG
+            [main][PooledByteBufAllocator.java:140] - -Dio.netty.allocator.smallCacheSize: 256
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,994 DEBUG
+            [main][PooledByteBufAllocator.java:141] - -Dio.netty.allocator.normalCacheSize: 64
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,994 DEBUG
+            [main][PooledByteBufAllocator.java:142] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,994 DEBUG
+            [main][PooledByteBufAllocator.java:143] - -Dio.netty.allocator.cacheTrimInterval: 8192
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,994 DEBUG
+            [main][PooledByteBufAllocator.java:144] - -Dio.netty.allocator.useCacheForAllThreads: true
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,994 DEBUG
+            [main][PooledByteBufAllocator.java:145] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,997 DEBUG
+            [main][InternalThreadLocalMap.java:54] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:58,997 DEBUG
+            [main][InternalThreadLocalMap.java:57] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:59,009 DEBUG
+            [main][DefaultChannelId.java:79] - -Dio.netty.processId: 19724 (auto-detected)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:59,011 DEBUG
+            [main][NetUtil.java:139] - -Djava.net.preferIPv4Stack: false
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:59,011 DEBUG
+            [main][NetUtil.java:140] - -Djava.net.preferIPv6Addresses: false
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:59,468 DEBUG
+            [main][NetUtil.java:224] - Loopback interface: [lo, Software Loopback Interface 1, 127.0.0.1] ([lo, Software Loopback Interface 1, 127.0.0.1], {})
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:15:59,468 DEBUG
+            [main][NetUtil.java:289] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,004 DEBUG
+            [main][DefaultChannelId.java:101] - -Dio.netty.machineId: 00:50:56:ff:fe:c0:00:08 (auto-detected)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,016 DEBUG
+            [main][ByteBufUtil.java:83] - -Dio.netty.allocator.type: pooled
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,016 DEBUG
+            [main][ByteBufUtil.java:92] - -Dio.netty.threadLocalDirectBufferSize: 0
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,016 DEBUG
+            [main][ByteBufUtil.java:95] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,036 INFO
+            [main][AbstractClient.java:199] -  [DUBBO] Succeed connect to server /192.168.70.136:20891 from NettyClient 192.168.70.136 using dubbo version 2.7.3, channel is NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,036 INFO
+            [main][AbstractClient.java:71] -  [DUBBO] Start NettyClient DESKTOP-5KR3PAU/192.168.70.136 connect to the server /192.168.70.136:20891, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,049 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.cache;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adaptive implements org.apache.dubbo.cache.CacheFactory {
+public org.apache.dubbo.cache.Cache getCache(org.apache.dubbo.common.URL arg0, org.apache.dubbo.rpc.Invocation arg1)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+if (arg1 == null) throw new IllegalArgumentException("invocation == null"); String methodName = arg1.getMethodName();
+String extName = url.getMethodParameter(methodName, "cache", "lru");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.cache.CacheFactory) name from url (" + url.toString() + ") use keys([cache])");
+org.apache.dubbo.cache.CacheFactory extension = (org.apache.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,055 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.monitor;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adaptive implements org.apache.dubbo.monitor.MonitorFactory {
+public org.apache.dubbo.monitor.Monitor getMonitor(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.monitor.MonitorFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.monitor.MonitorFactory extension = (org.apache.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,061 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.validation;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adaptive implements org.apache.dubbo.validation.Validation {
+public org.apache.dubbo.validation.Validator getValidator(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("validation", "jvalidation");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.validation.Validation) name from url (" + url.toString() + ") use keys([validation])");
+org.apache.dubbo.validation.Validation extension = (org.apache.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(org.apache.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,069 INFO
+            [main][AbstractRegistry.java:212] -  [DUBBO] Load registry cache file C:\Users\a1833\.dubbo\dubbo-registry-merchant-service-127.0.0.1:8848.cache, data: {merchant-application/com.alibaba.cloud.dubbo.service.DubboMetadataService:1.0.0=dubbo://192.168.70.136:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=14008&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700380425532&version=1.0.0}, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,070 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=consumers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=19724&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700396158721&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,074 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=19724&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700396158721&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,078 INFO
+            [main][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=19724&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700396158721&version=1.0.0, urls: [dubbo://192.168.70.136:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=8172&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700395637889&version=1.0.0], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,081 INFO
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=19724&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700396158721&version=1.0.0, urls: [dubbo://192.168.70.136:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=8172&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700395637889&version=1.0.0], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,084 INFO
+            [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service org.apache.dubbo.rpc.service.GenericService from url registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&check=false&cluster=registryaware&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=19724&qos.enable=false&qos.port=22240&refer=application%3Dmerchant-service%26check%3Dfalse%26dubbo%3D2.0.2%26generic%3Dtrue%26group%3Dmerchant-application%26interface%3Dcom.alibaba.cloud.dubbo.service.DubboMetadataService%26lazy%3Dfalse%26pid%3D19724%26qos.enable%3Dfalse%26qos.port%3D22240%26register.ip%3D192.168.70.136%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D90000%26timestamp%3D1700396158721%26version%3D1.0.0&register.ip=192.168.70.136&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700396158721&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,103 DEBUG
+            [main][Recycler.java:96] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,104 DEBUG
+            [main][Recycler.java:97] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,104 DEBUG
+            [main][Recycler.java:98] - -Dio.netty.recycler.linkCapacity: 16
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,104 DEBUG
+            [main][Recycler.java:99] - -Dio.netty.recycler.ratio: 8
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,110 DEBUG
+            [NettyClientWorker-1-1][AbstractByteBuf.java:61] - -Dio.netty.buffer.checkAccessible: true
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,110 DEBUG
+            [NettyClientWorker-1-1][AbstractByteBuf.java:62] - -Dio.netty.buffer.checkBounds: true
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,111 DEBUG
+            [NettyClientWorker-1-1][ResourceLeakDetectorFactory.java:202] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@53518735
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,146 DEBUG
+            [DubboClientHandler-192.168.70.136:20891-thread-1][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcResult, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,147 WARN
+            [main][DubboServiceMetadataRepository.java:484] - The Spring application[name : merchant-application] does not expose The REST metadata in the Dubbo services.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,147 INFO
+            [main][DubboServiceMetadataRepository.java:262] - The metadata of Dubbo services has been initialized
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,185 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,186 INFO
+            [com.alibaba.nacos.naming.client.listener][DubboServiceDiscoveryAutoConfiguration.java:157] - The event of the service instances[name : merchant-application , size : 1] change is about to be dispatched
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,192 INFO
+            [main][ServiceBean.java:112] -  [DUBBO] The service ready on spring started. service: com.huiminpay.merchant.api.MerchantService, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,196 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,214 INFO
+            [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.huiminpay.merchant.api.MerchantService to local registry url : injvm://127.0.0.1/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,214 INFO
+            [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.huiminpay.merchant.api.MerchantService to url dubbo://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,214 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,214 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.huiminpay.merchant.api.MerchantService url dubbo://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200 to registry registry://localhost:9090/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=19724&qos.enable=false&qos.port=22240&registry=spring-cloud&release=2.7.3&timestamp=1700396160198, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,230 INFO
+            [main][AbstractServer.java:73] -  [DUBBO] Start NettyServer bind /0.0.0.0:20890, export /192.168.70.136:20890, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:00,236 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&register=true&release=2.7.3&side=provider&timestamp=1700396160200, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,038 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,038 INFO
+            [main][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService] is being subscribed for service[name : merchant-application]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,046 DEBUG
+            [DubboClientHandler-192.168.70.136:20891-thread-1][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcResult, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,046 DEBUG
+            [main][AbstractSpringCloudRegistry.java:289] - The subscribed URL[provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200] will notify all URLs : []
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,046 DEBUG
+            [main][RegistryProtocol.java:524] -  [DUBBO] original override urls: [], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,046 DEBUG
+            [main][RegistryProtocol.java:528] -  [DUBBO] subscribe url: provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200, override urls: [], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,047 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,047 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.huiminpay.merchant.api.MerchantService url dubbo://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200 to registry registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=19724&qos.enable=false&qos.port=22240&registry=nacos&release=2.7.3&timestamp=1700396160198, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,048 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&register=true&release=2.7.3&side=provider&timestamp=1700396160200, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,050 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,053 WARN
+            [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,053 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700396160200, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,056 INFO
+            [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-56040"]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,065 INFO
+            [main][TomcatWebServer.java:204] - Tomcat started on port(s): 56040 (http) with context path '/merchant-service'
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,077 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,084 INFO
+            [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to local registry url : injvm://127.0.0.1/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.70.136&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700396161078&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,084 INFO
+            [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to url dubbo://192.168.70.136:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.70.136&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700396161078&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,084 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,084 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService url dubbo://192.168.70.136:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.70.136&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700396161078&version=1.0.0 to registry registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=19724&qos.enable=false&qos.port=22240&registry=nacos&release=2.7.3&timestamp=1700396161078, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,085 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.70.136:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=19724&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700396161078&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,087 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.70.136:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700396161078&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,090 WARN
+            [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.70.136:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700396161078&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,090 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.70.136:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=19724&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700396161078&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,091 INFO
+            [main][DubboMetadataServiceExporter.java:86] - The Dubbo service[<dubbo:service path="com.alibaba.cloud.dubbo.service.DubboMetadataService" ref="com.alibaba.cloud.dubbo.service.IntrospectiveDubboMetadataService@4e52d2f2" prefix="dubbo.service.com.alibaba.cloud.dubbo.service.DubboMetadataService" generic="false" unexported="false" exported="true" interface="com.alibaba.cloud.dubbo.service.DubboMetadataService" dynamic="true" version="1.0.0" group="merchant-service" deprecated="false" register="true" id="com.alibaba.cloud.dubbo.service.DubboMetadataService" valid="true" />] has been exported.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,100 INFO
+            [main][NacosServiceRegistry.java:62] - nacos registry, merchant-service 192.168.226.1:56040 register finished
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:01,103 INFO
+            [main][StartupInfoLogger.java:59] - Started MerchantBootstrap in 10.227 seconds (JVM running for 11.449)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,063 WARN
+            [com.alibaba.nacos.naming.push.receiver][HostReactor.java:110] - out of date data received, old-t: 1700396162061, new-t: 1700396162059
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,467 INFO
+            [RMI TCP Connection(3)-192.168.70.136][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,467 INFO
+            [RMI TCP Connection(3)-192.168.70.136][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,478 INFO
+            [RMI TCP Connection(3)-192.168.70.136][FrameworkServlet.java:546] - Completed initialization in 11 ms
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,478 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,483 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,488 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,491 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:137] - {conn-10005, stmt-20000} created
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,545 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:137] - {conn-10005, stmt-20000, rs-50000} query executed. 50.7782 millis. /* ping */ SELECT 1
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,545 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:142] - {conn-10005, stmt-20000, rs-50000} open
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,546 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:142] - {conn-10005, stmt-20000, rs-50000} Header: [1]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,548 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:142] - {conn-10005, stmt-20000, rs-50000} Result: [1]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,548 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:142] - {conn-10005, stmt-20000, rs-50000} closed
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,549 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:137] - {conn-10005, stmt-20000} closed
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:02,549 DEBUG
+            [RMI TCP Connection(2)-192.168.70.136][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:16:30,204 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:17:00,207 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:17:01,046 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:17:01,047 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:17:30,212 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:17:30,947 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-2][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:17:36,019 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:17:36,891 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-4][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:17:43,033 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-5][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,228 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,824 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,878 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,881 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT COUNT( 1 ) FROM merchant WHERE MOBILE = ? 
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,903 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} created. SELECT COUNT( 1 ) FROM merchant 
+ 
+ WHERE MOBILE = ?
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,914 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][BaseJdbcLogger.java:159] - ==> Parameters: 13492727581(String)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,915 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Parameters : [13492727581]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,915 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Types : [VARCHAR]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,959 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} executed. 44.9843 millis. SELECT COUNT( 1 ) FROM merchant 
+ 
+ WHERE MOBILE = ?
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,960 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50001} open
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,960 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50001} Header: [COUNT( 1 )]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,965 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50001} Result: [0]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,966 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][BaseJdbcLogger.java:159] - <==      Total: 1
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,967 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50001} closed
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,967 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} clearParameters. 
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,967 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][PreparedStatementPool.java:129] - {conn-10005, pstmt-20001} enter cache
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:00,969 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,056 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,057 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,462 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,463 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][BaseJdbcLogger.java:159] - ==>  Preparing: INSERT INTO merchant ( ID, USERNAME, MOBILE, AUDIT_STATUS ) VALUES ( ?, ?, ?, ? ) 
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,467 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} created. INSERT INTO merchant  ( ID,
+
+
+
+
+
+
+
+USERNAME,
+MOBILE,
+
+AUDIT_STATUS )  VALUES  ( ?,
+
+
+
+
+
+
+
+?,
+?,
+
+? )
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,471 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][BaseJdbcLogger.java:159] - ==> Parameters: 1726213235370328066(Long), 张三2(String), 13492727581(String), 0(String)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,471 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} Parameters : [1726213235370328066, 张三2, 13492727581, 0]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,472 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,481 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} executed. 9.6185 millis. INSERT INTO merchant  ( ID,
+
+
+
+
+
+
+
+USERNAME,
+MOBILE,
+
+AUDIT_STATUS )  VALUES  ( ?,
+
+
+
+
+
+
+
+?,
+?,
+
+? )
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,482 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][BaseJdbcLogger.java:159] - <==    Updates: 1
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,483 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:137] - {conn-10005, pstmt-20002} clearParameters. 
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,483 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][PreparedStatementPool.java:129] - {conn-10005, pstmt-20002} enter cache
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:01,483 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-6][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:18:30,236 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:00,248 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:01,067 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:01,068 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:01,488 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,201 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,205 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,205 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT COUNT( 1 ) FROM merchant WHERE MOBILE = ? 
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,207 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][BaseJdbcLogger.java:159] - ==> Parameters: 13492727581(String)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,208 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Parameters : [13492727581]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,208 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Types : [VARCHAR]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,218 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} executed. 9.8884 millis. SELECT COUNT( 1 ) FROM merchant 
+ 
+ WHERE MOBILE = ?
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,218 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50002} open
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,218 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50002} Header: [COUNT( 1 )]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,219 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50002} Result: [1]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,219 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][BaseJdbcLogger.java:159] - <==      Total: 1
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,219 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50002} closed
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,220 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} clearParameters. 
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:20,220 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-7][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:19:30,251 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:20:00,265 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:20:01,070 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:20:01,071 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:20:20,229 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:20:30,274 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:21:00,283 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:21:01,078 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:21:01,079 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:21:20,238 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:21:30,296 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:22:00,301 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:22:01,092 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:22:01,093 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:22:20,244 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:22:30,316 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:23:00,325 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:23:01,104 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:23:01,104 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:23:20,252 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:23:30,328 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:24:00,343 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:24:01,106 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:24:01,107 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:24:20,259 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:24:30,360 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:25:00,363 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:25:01,112 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:25:01,112 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:25:20,274 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:25:30,378 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:26:00,381 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:26:01,126 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:26:01,127 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:26:20,283 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:26:30,392 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:27:00,401 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:27:01,128 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:27:01,129 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:27:20,289 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:27:30,417 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:28:00,424 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:28:01,144 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:28:01,145 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:28:20,297 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:28:30,437 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:29:00,453 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:29:01,149 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:29:01,150 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:29:20,312 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:29:30,468 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:30:00,471 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:30:01,156 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:30:01,157 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:30:20,323 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:54796, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:30:30,483 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:31:00,488 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:31:01,160 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x5a30721a, L:/192.168.70.136:54659 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-19 20:31:01,161 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
