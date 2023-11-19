@@ -1,0 +1,158 @@
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:00:13,595 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:00:42,634 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:00:42,635 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:00:43,602 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:00:46,296 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:50981, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:01:13,610 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:01:42,642 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:01:42,642 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:01:43,621 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:01:46,308 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:50981, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:02:13,630 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:02:42,658 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:02:42,658 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:02:43,638 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:02:46,320 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:50981, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:03:13,646 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:03:42,659 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:03:42,661 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:03:43,664 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:03:46,334 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:50981, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:04:13,673 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:04:42,662 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:04:42,662 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:04:43,688 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:04:46,334 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:50981, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:05:13,700 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:05:42,665 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:05:42,666 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:05:43,707 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:05:46,346 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:50981, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:06:13,721 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:06:42,675 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:06:42,676 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:06:43,730 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:06:46,356 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:50981, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:13,747 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,771 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,781 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:132] - {conn-10005} pool-connect
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,783 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,MERCHANT_NAME,MERCHANT_NO,MERCHANT_ADDRESS,MERCHANT_TYPE,BUSINESS_LICENSES_IMG,ID_CARD_FRONT_IMG,ID_CARD_AFTER_IMG,USERNAME,MOBILE,CONTACTS_ADDRESS,AUDIT_STATUS,TENANT_ID FROM merchant WHERE ID=? 
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,788 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][BaseJdbcLogger.java:159] - ==> Parameters: 1(Long)
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,789 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Parameters : [1]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,789 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} Types : [BIGINT]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,793 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} executed. 4.5686 millis. SELECT ID,MERCHANT_NAME,MERCHANT_NO,MERCHANT_ADDRESS,MERCHANT_TYPE,BUSINESS_LICENSES_IMG,ID_CARD_FRONT_IMG,ID_CARD_AFTER_IMG,USERNAME,MOBILE,CONTACTS_ADDRESS,AUDIT_STATUS,TENANT_ID FROM merchant WHERE ID=?
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,794 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50002} open
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,795 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50002} Header: [ID, MERCHANT_NAME, MERCHANT_NO, MERCHANT_ADDRESS, MERCHANT_TYPE, BUSINESS_LICENSES_IMG, ID_CARD_FRONT_IMG, ID_CARD_AFTER_IMG, USERNAME, MOBILE, CONTACTS_ADDRESS, AUDIT_STATUS, TENANT_ID]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,795 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50002} Result: [1, 瑞星咖啡, , 郑州, , null, null, null, null, null, null, null, null]
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,797 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][BaseJdbcLogger.java:159] - <==      Total: 1
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,798 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:142] - {conn-10005, pstmt-20001, rs-50002} closed
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,799 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:137] - {conn-10005, pstmt-20001} clearParameters. 
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:37,799 DEBUG
+            [DubboServerHandler-192.168.70.136:20890-thread-3][Log4j2Filter.java:132] - {conn-10005} pool-recycle
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:42,683 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:42,683 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:07:43,752 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:08:13,755 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:08:37,816 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:50981, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:08:42,697 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:08:42,697 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:08:43,771 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:13,787 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,927 INFO
+            [Thread-28][AbstractRegistry.java:291] -  [DUBBO] Unregister: dubbo://192.168.70.136:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13116&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700104421271&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,933 INFO
+            [Thread-28][AbstractRegistry.java:320] -  [DUBBO] Unsubscribe: provider://192.168.70.136:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13116&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700104421271&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,936 INFO
+            [Exporter-Unexport-thread-1][RegistryProtocol.java:689] -  [DUBBO] Waiting 10000ms for registry to notify all consumers before unexport. Usually, this is called when you use dubbo API, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,937 INFO
+            [Thread-28][DubboMetadataServiceExporter.java:107] - The Dubbo service[<dubbo:service path="com.alibaba.cloud.dubbo.service.DubboMetadataService" ref="com.alibaba.cloud.dubbo.service.IntrospectiveDubboMetadataService@54997f67" prefix="dubbo.service.com.alibaba.cloud.dubbo.service.DubboMetadataService" generic="false" unexported="true" exported="true" interface="com.alibaba.cloud.dubbo.service.DubboMetadataService" dynamic="true" version="1.0.0" group="merchant-service" register="true" deprecated="false" id="com.alibaba.cloud.dubbo.service.DubboMetadataService" valid="true" />] has been unexported.
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,938 INFO
+            [Thread-28][AwaitingNonWebApplicationListener.java:155] -  [Dubbo] Current Spring Boot Application is about to shutdown...
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,939 INFO
+            [Thread-28][AbstractRegistryFactory.java:68] -  [DUBBO] Close all registries [nacos://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&interface=org.apache.dubbo.registry.RegistryService&pid=13116&qos.enable=false&qos.port=22240&release=2.7.3&timestamp=1700104418799], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,939 INFO
+            [Thread-28][AbstractRegistry.java:458] -  [DUBBO] Destroy registry:nacos://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&interface=org.apache.dubbo.registry.RegistryService&pid=13116&qos.enable=false&qos.port=22240&release=2.7.3&timestamp=1700104418799, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,939 INFO
+            [Thread-28][AbstractRegistry.java:291] -  [DUBBO] Unregister: consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=consumers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=13116&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700104418795&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,941 INFO
+            [Thread-28][AbstractRegistry.java:467] -  [DUBBO] Destroy unregister url consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=consumers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=13116&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700104418795&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,941 INFO
+            [Thread-28][AbstractRegistry.java:291] -  [DUBBO] Unregister: dubbo://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById&pid=13116&register=true&release=2.7.3&side=provider&timestamp=1700104420313, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,942 INFO
+            [Thread-28][AbstractRegistry.java:467] -  [DUBBO] Destroy unregister url dubbo://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById&pid=13116&register=true&release=2.7.3&side=provider&timestamp=1700104420313, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,942 INFO
+            [Thread-28][AbstractRegistry.java:320] -  [DUBBO] Unsubscribe: provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById&pid=13116&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700104420313, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,942 INFO
+            [Thread-28][AbstractRegistry.java:483] -  [DUBBO] Destroy unsubscribe url provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById&pid=13116&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700104420313, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,942 INFO
+            [Thread-28][AbstractRegistry.java:320] -  [DUBBO] Unsubscribe: consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=13116&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700104418795&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,942 INFO
+            [Thread-28][AbstractRegistry.java:483] -  [DUBBO] Destroy unsubscribe url consumer://192.168.70.136/org.apache.dubbo.rpc.service.GenericService?application=merchant-service&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=13116&qos.enable=false&qos.port=22240&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=90000&timestamp=1700104418795&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:35,943 INFO
+            [Thread-28][DubboProtocol.java:616] -  [DUBBO] Close dubbo server: /192.168.70.136:20890, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:36,941 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.70.136:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=13116&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1700104421271&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:36,955 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.70.136:20890/com.huiminpay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantService&bind.ip=192.168.70.136&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantService&methods=queryMerchantById&pid=13116&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1700104420313, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:42,711 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0x055c052d, L:/192.168.70.136:50902 - R:/192.168.70.136:20891]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-service][${env:SERVER_PORT}] 2023-11-16 14:09:42,711 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136

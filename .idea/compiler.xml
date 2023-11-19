@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="huiminpay-merchant-application" />
+        <module name="huiminpay-merchant-api" />
+        <module name="huiminpay-common" />
+        <module name="huiminpay-merchant-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="adf" target="1.8" />
+      <module name="huiminpay" target="1.8" />
+      <module name="huiminpay-common" target="1.8" />
+      <module name="huiminpay-merchant" target="1.8" />
+      <module name="huiminpay-merchant-api" target="1.8" />
+      <module name="huiminpay-merchant-application" target="1.8" />
+      <module name="huiminpay-merchant-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="adf" options="-parameters" />
+      <module name="huiminpay" options="-parameters" />
+      <module name="huiminpay-common" options="-parameters -bootclasspath D:/DevelopTools/Java/jdk1.8.0_131/jre/lib/rt.jar;D:/DevelopTools/Java/jdk1.8.0_131/jre/lib/jce.jar" />
+      <module name="huiminpay-merchant" options="-parameters" />
+      <module name="huiminpay-merchant-api" options="-parameters" />
+      <module name="huiminpay-merchant-application" options="-parameters" />
+      <module name="huiminpay-merchant-service" options="-parameters" />
+    </option>
+  </component>
+</project>

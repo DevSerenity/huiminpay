@@ -1,0 +1,5 @@
+# Project exclude paths
+/huiminpay/huiminpay-common/target/
+/huiminpay/huiminpay-merchant/huiminpay-merchant-api/target/
+/huiminpay/huiminpay-merchant/huiminpay-merchant-service/target/
+/huiminpay/huiminpay-merchant-application/target/

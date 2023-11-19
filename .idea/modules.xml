@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-common/huiminpay-common.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-common/huiminpay-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay-merchant.iml" filepath="$PROJECT_DIR$/huiminpay-merchant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-api/huiminpay-merchant-api.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-api/huiminpay-merchant-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay-merchant-application.iml" filepath="$PROJECT_DIR$/huiminpay-merchant-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-service/huiminpay-merchant-service.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-service/huiminpay-merchant-service.iml" />
+    </modules>
+  </component>
+</project>
