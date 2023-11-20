@@ -30,4 +30,12 @@ public interface MerchantService {
     MerchantDTO createMerchant(MerchantDTO merchantDTO) throws BusinessException;
 
 
+    /**
+     * 资质申请接口
+     *
+     * @param merchantId  商户id
+     * @param merchantDTO 商户dto
+     * @throws BusinessException 业务异常
+     */
+    void applyMerchant(Long merchantId,MerchantDTO merchantDTO) throws BusinessException;
 }

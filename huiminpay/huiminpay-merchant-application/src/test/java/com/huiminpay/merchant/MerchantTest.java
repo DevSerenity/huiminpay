@@ -1,5 +1,10 @@
 package com.huiminpay.merchant;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.huiminpay.common.cache.util.EncryptUtil;
+import com.huiminpay.merchant.api.MerchantService;
+import com.huiminpay.merchant.dto.MerchantDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -74,4 +79,25 @@ public class MerchantTest {
 
     }
 
-}
+
+
+
+        @Autowired
+        MerchantService merchantService;
+
+        //生成token，指定商户id
+        @Test
+        public void createTestToken() {
+            Long merchantId = 1726135834162372609L;//填写用于测试的商户id
+            MerchantDTO merchantDTO = merchantService.queryMerchantById(merchantId);
+            JSONObject token = new JSONObject();
+            token.put("mobile", merchantDTO.getMobile());
+            token.put("user_name", merchantDTO.getUsername());
+            token.put("merchantId", merchantId);
+
+            String jwt_token = "Bearer " + EncryptUtil.encodeBase64(JSON.toJSONString(token).getBytes());
+            System.out.println(jwt_token);
+        }
+    }
+
+
