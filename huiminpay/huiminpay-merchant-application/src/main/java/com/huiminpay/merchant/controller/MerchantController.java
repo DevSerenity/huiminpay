@@ -1,5 +1,8 @@
 package com.huiminpay.merchant.controller;
 
+import com.huiminpay.common.cache.domain.BusinessException;
+import com.huiminpay.common.cache.domain.CommonErrorCode;
+import com.huiminpay.common.cache.util.PhoneUtil;
 import com.huiminpay.merchant.api.MerchantService;
 import com.huiminpay.merchant.convert.MerchantRegisterConvert;
 import com.huiminpay.merchant.dto.MerchantDTO;
@@ -10,6 +13,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.common.utils.StringUtils;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +58,32 @@ public class MerchantController {
             "MerchantRegisterVo", paramType = "body")
     @PostMapping("/merchants/register")
     public MerchantRegisterVo registerMerchant(@RequestBody MerchantRegisterVo merchantRegister) {
+
+        // 1.校验
+        if (merchantRegister == null) {
+            throw new BusinessException(CommonErrorCode.E_100108);
+        }
+//手机号非空校验
+        if (StringUtils.isBlank(merchantRegister.getMobile())) {
+            throw new BusinessException(CommonErrorCode.E_100112);
+        }
+//校验手机号的合法性
+        if (!PhoneUtil.isMatches(merchantRegister.getMobile())) {
+            throw new BusinessException(CommonErrorCode.E_100109);
+        }
+//联系人非空校验
+        if (StringUtils.isBlank(merchantRegister.getUsername())) {
+            throw new BusinessException(CommonErrorCode.E_100110);
+        }
+//密码非空校验
+        if (StringUtils.isBlank(merchantRegister.getPassword())) {
+            throw new BusinessException(CommonErrorCode.E_100111);
+        }
+//验证码非空校验
+        if (StringUtils.isBlank(merchantRegister.getVerifiyCode()) ||
+                StringUtils.isBlank(merchantRegister.getVerifiykey())) {
+            throw new BusinessException(CommonErrorCode.E_100103);
+        }
         smsService.checkVerifiyCode(merchantRegister.getVerifiykey(),
                 merchantRegister.getVerifiyCode());
         //注册商户

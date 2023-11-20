@@ -53,11 +53,11 @@ public class MerchantServiceImpl implements MerchantService {
         if (merchantDTO == null) {
             throw new BusinessException(CommonErrorCode.E_100108);
         }
-//手机号非空校验
+        //手机号非空校验
         if (StringUtils.isEmpty(merchantDTO.getMobile())) {
             throw new BusinessException(CommonErrorCode.E_100112);
         }
-//手机号合法性校验
+        //手机号合法性校验
         if (!PhoneUtil.isMatches(merchantDTO.getMobile())) {
             throw new BusinessException(CommonErrorCode.E_100109);
         }
@@ -65,7 +65,7 @@ public class MerchantServiceImpl implements MerchantService {
         if (StringUtils.isBlank(merchantDTO.getUsername())) {
             throw new BusinessException(CommonErrorCode.E_100110);
         }
-//密码非空校验
+        //密码非空校验
         if (StringUtils.isBlank(merchantDTO.getPassword())) {
             throw new BusinessException(CommonErrorCode.E_100111);
         }

@@ -1,4 +1,4 @@
-package com.huiminpay.merchant.intercept;
+package com.huiminpay.merchant.common.intercept;
 
 import com.huiminpay.common.cache.domain.BusinessException;
 import com.huiminpay.common.cache.domain.CommonErrorCode;
