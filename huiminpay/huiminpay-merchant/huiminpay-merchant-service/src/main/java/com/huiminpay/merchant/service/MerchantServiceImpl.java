@@ -50,32 +50,30 @@ public class MerchantServiceImpl implements MerchantService {
      */
     @Override
     public MerchantDTO createMerchant(MerchantDTO merchantDTO) throws BusinessException {
-        //参数的校验
-        if(merchantDTO==null){
+        if (merchantDTO == null) {
             throw new BusinessException(CommonErrorCode.E_100108);
         }
-        //手机号码校验
-        if(StringUtils.isEmpty(merchantDTO.getMobile())){
+//手机号非空校验
+        if (StringUtils.isEmpty(merchantDTO.getMobile())) {
             throw new BusinessException(CommonErrorCode.E_100112);
         }
-        //手机号校验
-        if(!PhoneUtil.isMatches(merchantDTO.getMobile())){
-            throw new BusinessException(CommonErrorCode.E_100109);//手机号码为空
+//手机号合法性校验
+        if (!PhoneUtil.isMatches(merchantDTO.getMobile())) {
+            throw new BusinessException(CommonErrorCode.E_100109);
         }
-        //用户名校验
-        if (StringUtils.isBlank(merchantDTO.getUsername())){
-            throw new BusinessException(CommonErrorCode.E_100110);//用户名为空
+        //联系人非空校验
+        if (StringUtils.isBlank(merchantDTO.getUsername())) {
+            throw new BusinessException(CommonErrorCode.E_100110);
         }
-        //密码校验
-        if(StringUtils.isBlank(merchantDTO.getPassword())){
-            throw new BusinessException(CommonErrorCode.E_100111); //密码为空
+//密码非空校验
+        if (StringUtils.isBlank(merchantDTO.getPassword())) {
+            throw new BusinessException(CommonErrorCode.E_100111);
         }
-
-        LambdaQueryWrapper<Merchant> wrapper = new LambdaQueryWrapper<>();
-        wrapper.eq(Merchant::getMobile,merchantDTO.getMobile());
-        Integer count = merchantMapper.selectCount(wrapper);
+        LambdaQueryWrapper<Merchant> lqw = new LambdaQueryWrapper<>();
+        lqw.eq(Merchant::getMobile,merchantDTO.getMobile());
+        Integer count  = merchantMapper.selectCount(lqw);
         if(count>0){
-            throw new BusinessException(CommonErrorCode.E_100113);//手机号码已存在
+            throw  new BusinessException(CommonErrorCode.E_100113);
         }
 
         Merchant merchant = MerchantConvert.INSTANCE.dto2Entity(merchantDTO);

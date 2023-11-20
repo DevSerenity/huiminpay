@@ -49,9 +49,10 @@ public class GlobalExceptionHandler {
             String desc = errorCode.getDesc();
 
             return new RestErrorResponse(String.valueOf(code),desc);
+        }else {
+            LOGGER.error("系统异常",e);
+            return new RestErrorResponse(String.valueOf(CommonErrorCode.UNKNOWN.getCode()),
+                    CommonErrorCode.UNKNOWN.getDesc());
         }
-        LOGGER.error("系统异常",e);
-        return new RestErrorResponse(String.valueOf(CommonErrorCode.UNKNOWN.getCode()),
-                CommonErrorCode.UNKNOWN.getDesc());
     }
 }
