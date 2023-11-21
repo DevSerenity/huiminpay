@@ -33,7 +33,7 @@ import java.io.IOException;
  */
 @RestController
 @Slf4j
-@Api(value = "商户信息", hidden = true, description = "商户信息模块")
+@Api(value = "商户信息", description = "商户信息模块",tags = "商户平台-商户信息")
 public class MerchantController {
 
     @Reference
