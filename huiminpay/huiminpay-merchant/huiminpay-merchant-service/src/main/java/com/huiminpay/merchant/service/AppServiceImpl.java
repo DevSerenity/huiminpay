@@ -16,6 +16,7 @@ import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @ClassName AppServiceImpl
@@ -55,6 +56,35 @@ public class AppServiceImpl implements AppSerivice {
         App entity = AppCovert.INSTANCE.dto2entity(app);
         appMapper.insert(entity);
         return AppCovert.INSTANCE.entity2dto(entity);
+    }
+
+    /**
+     * 商家查询应用
+     *
+     * @param merchantId 商人id
+     * @return 列表<app dto>
+     * @throws BusinessException 业务异常
+     */
+    @Override
+    public List<AppDTO> queryAppByMerchant(Long merchantId) throws BusinessException {
+        List<App> apps = appMapper.selectList(new LambdaQueryWrapper<App>()
+                .eq(App::getMerchantId, merchantId));
+        //list->dto
+        List<AppDTO> appDTOS = AppCovert.INSTANCE.listEntity2dto(apps);
+        return appDTOS;
+    }
+
+    /**
+     * 按id获取应用
+     *
+     * @param id id
+     * @return 应用dto
+     * @throws BusinessException 业务异常
+     */
+    @Override
+    public AppDTO getAppById(String id) throws BusinessException {
+        App app = appMapper.selectOne(new QueryWrapper<App>().lambda().eq(App::getAppId, id));
+        return AppCovert.INSTANCE.entity2dto(app);
     }
 
     /**

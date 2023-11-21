@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-api/huiminpay-merchant-api.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-api/huiminpay-merchant-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/huiminpay-merchant-application.iml" filepath="$PROJECT_DIR$/huiminpay-merchant-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-service/huiminpay-merchant-service.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-service/huiminpay-merchant-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction-api/huiminpay-transaction-api.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction-api/huiminpay-transaction-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction-service/huiminpay-transaction-service.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction-service/huiminpay-transaction-service.iml" />
     </modules>
   </component>
 </project>

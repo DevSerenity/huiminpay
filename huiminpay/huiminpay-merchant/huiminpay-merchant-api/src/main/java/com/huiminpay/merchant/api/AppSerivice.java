@@ -3,6 +3,8 @@ package com.huiminpay.merchant.api;
 import com.huiminpay.common.cache.domain.BusinessException;
 import com.huiminpay.merchant.dto.AppDTO;
 
+import java.util.List;
+
 /**
  * @ClassName AppSerivice
  * @Author: DevSerenity
@@ -23,4 +25,24 @@ public interface AppSerivice {
      * @throws BusinessException 业务异常
      */
     AppDTO createApp(Long merchantId,AppDTO appDTO) throws BusinessException;
+
+
+    /**
+     * 商家查询应用
+     *
+     * @param merchantId 商人id
+     * @return 列表<app dto>
+     * @throws BusinessException 业务异常
+     */
+    List<AppDTO> queryAppByMerchant(Long merchantId) throws BusinessException;
+
+
+    /**
+     * 按id获取应用
+     *
+     * @param id id
+     * @return 应用dto
+     * @throws BusinessException 业务异常
+     */
+    AppDTO getAppById(String id) throws BusinessException;
 }
