@@ -26020,3 +26020,11 @@ return extension.getValidator(arg0);
             [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 192.168.70.136
 [huiminpay-merchant-application][${env:SERVER_PORT}] 2023-11-21 15:15:19,052 WARN
             [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-application][${env:SERVER_PORT}] 2023-11-21 15:15:34,120 DEBUG
+            [NettyClientWorker-1-2][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0xde833bff, L:/192.168.226.1:49438 - R:/192.168.226.1:20890]], dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-application][${env:SERVER_PORT}] 2023-11-21 15:15:34,121 DEBUG
+            [NettyClientWorker-1-2][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-2, dubbo version: 2.7.3, current host: 192.168.70.136
+[huiminpay-merchant-application][${env:SERVER_PORT}] 2023-11-21 15:15:49,064 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[huiminpay-merchant-application][${env:SERVER_PORT}] 2023-11-21 15:15:49,388 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:49592, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
