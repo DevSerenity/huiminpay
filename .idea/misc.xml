@@ -7,6 +7,14 @@
         <option value="$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-api/pom.xml" />
         <option value="$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-service/pom.xml" />
         <option value="$PROJECT_DIR$/huiminpay/huiminpay-transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/huiminpay/huiminpay-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/huiminpay/huiminpay-uaa/pom.xml" />
+        <option value="$PROJECT_DIR$/huiminpay/huiminpay-user/pom.xml" />
+        <option value="$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-api/pom.xml" />
+        <option value="$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-api/pom.xml" />
+        <option value="$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-service/pom.xml" />
+        <option value="$PROJECT_DIR$/huiminpay/huiminpay-gateway/huiminpay-gateway-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

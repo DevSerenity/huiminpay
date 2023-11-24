@@ -132,6 +132,7 @@ public class MerchantController {
     public void saveMerchant(@RequestBody MerchantDetailVO merchantInfo){
         //解析token
         Long merchantId = SecurityUtil.getMerchantId();
+        System.out.println(merchantId);
         //vo->dto
         MerchantDTO merchantDTO = MerchantDetailConvert.INSTANCE.vo2dto(merchantInfo);
         merchantService.applyMerchant(merchantId,merchantDTO);

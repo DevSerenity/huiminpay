@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay.iml" />
       <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-common/huiminpay-common.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-common/huiminpay-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-gateway/huiminpay-gateway.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-gateway/huiminpay-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-gateway/huiminpay-gateway-service/huiminpay-gateway-service.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-gateway/huiminpay-gateway-service/huiminpay-gateway-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/huiminpay-merchant.iml" filepath="$PROJECT_DIR$/huiminpay-merchant.iml" />
       <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-api/huiminpay-merchant-api.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-merchant/huiminpay-merchant-api/huiminpay-merchant-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/huiminpay-merchant-application.iml" filepath="$PROJECT_DIR$/huiminpay-merchant-application.iml" />
@@ -11,6 +13,12 @@
       <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction-api/huiminpay-transaction-api.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction-api/huiminpay-transaction-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction-service/huiminpay-transaction-service.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction-service/huiminpay-transaction-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-api/huiminpay-uaa-api.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-api/huiminpay-uaa-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-service/huiminpay-uaa-service.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-service/huiminpay-uaa-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-api/huiminpay-user-api.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-api/huiminpay-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-service/huiminpay-user-service.iml" filepath="$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-service/huiminpay-user-service.iml" />
     </modules>
   </component>
 </project>

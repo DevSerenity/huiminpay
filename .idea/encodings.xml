@@ -3,6 +3,10 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-gateway/huiminpay-gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-gateway/huiminpay-gateway-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-merchant-application/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-merchant-application/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-merchant/adf/src/main/java" charset="UTF-8" />
@@ -19,8 +23,28 @@
     <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-transaction/huiminpay-transaction-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-transaction/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-transaction/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-uaa/huiminpay-uaa-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-uaa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-uaa/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-user/huiminpay-user-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huiminpay/huiminpay-user/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huiminpay/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../../NwtDownload/505 java/03_ssm框架/05_惠民支付/day08-SAAS对接和前后端集成/资料/saas服务工程/huiminpay-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../../NwtDownload/505 java/03_ssm框架/05_惠民支付/day08-SAAS对接和前后端集成/资料/saas服务工程/huiminpay-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../../NwtDownload/505 java/03_ssm框架/05_惠民支付/day08-SAAS对接和前后端集成/资料/saas服务工程/huiminpay-uaa/huiminpay-uaa-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../../NwtDownload/505 java/03_ssm框架/05_惠民支付/day08-SAAS对接和前后端集成/资料/saas服务工程/huiminpay-uaa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../../NwtDownload/505 java/03_ssm框架/05_惠民支付/day08-SAAS对接和前后端集成/资料/saas服务工程/huiminpay-uaa/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../../NwtDownload/505 java/03_ssm框架/05_惠民支付/day08-SAAS对接和前后端集成/资料/saas服务工程/huiminpay-user/huiminpay-user-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../../NwtDownload/505 java/03_ssm框架/05_惠民支付/day08-SAAS对接和前后端集成/资料/saas服务工程/huiminpay-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../../NwtDownload/505 java/03_ssm框架/05_惠民支付/day08-SAAS对接和前后端集成/资料/saas服务工程/huiminpay-user/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
