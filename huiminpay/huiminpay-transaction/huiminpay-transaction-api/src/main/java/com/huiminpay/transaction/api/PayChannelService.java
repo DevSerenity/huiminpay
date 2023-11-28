@@ -44,7 +44,7 @@ public interface PayChannelService {
      * @return int
      * @throws BusinessException 业务异常
      */
-    String queryAppBindPlatformChannel(String appId,String platformChannel) throws BusinessException;
+    int queryAppBindPlatformChannel(String appId,String platformChannel) throws BusinessException;
 
 
     /**
@@ -63,7 +63,7 @@ public interface PayChannelService {
      * @param channelParam
      * @throws BusinessException 业务异常
      */
-    void savePayChannelParm(PayChannelParamDTO channelParam) throws BusinessException;
+    void savePayChannelParam(PayChannelParamDTO channelParam) throws BusinessException;
 
 
     /**

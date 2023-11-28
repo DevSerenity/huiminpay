@@ -5,8 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.huiminpay.common.cache.util.EncryptUtil;
 import com.huiminpay.merchant.api.MerchantService;
 import com.huiminpay.merchant.dto.MerchantDTO;
-
-import org.apache.dubbo.common.utils.StringUtils;
+import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -19,19 +18,20 @@ import java.util.Map;
  */
 public class SecurityUtil {
 
-//	测试使用
-	public static Long getMerchantId() {
-		HttpServletRequest request = ((ServletRequestAttributes) (RequestContextHolder.currentRequestAttributes()))
-				.getRequest();
-		String jsonToken = request.getHeader("authorization");
-		if (StringUtils.isEmpty(jsonToken) || !jsonToken.startsWith("Bearer ")) {
-			throw new RuntimeException("token is not as expected");
-		}
-		jsonToken = jsonToken.substring(7);
-		jsonToken = EncryptUtil.decodeUTF8StringBase64(jsonToken);
-		JSONObject jsonObject = JSON.parseObject(jsonToken);
-		return jsonObject.getLong("merchantId");
-	}
+	//测试使用
+//	public static Long getMerchantId() {
+//		HttpServletRequest request = ((ServletRequestAttributes) (RequestContextHolder.currentRequestAttributes()))
+//				.getRequest();
+//		String jsonToken = request.getHeader("authorization");
+//		if (StringUtils.isEmpty(jsonToken) || !jsonToken.startsWith("Bearer ")) {
+//			throw new RuntimeException("token is not as expected");
+//		}
+//		jsonToken = jsonToken.substring(7);
+//		jsonToken = EncryptUtil.decodeUTF8StringBase64(jsonToken);
+//		JSONObject jsonObject = JSON.parseObject(jsonToken);
+//		return jsonObject.getLong("merchantId");
+//	}
+
 	public static LoginUser getUser() {
 		ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder
 				.getRequestAttributes();
@@ -47,11 +47,7 @@ public class SecurityUtil {
 		return new LoginUser();
 	}
 
-	/**
-	 * 通过token获取所得用户
-	 * @return
-	 */
-	/*public static Long getMerchantId(){
+	public static Long getMerchantId(){
 		MerchantService merchantService = ApplicationContextHelper.getBean(MerchantService.class);
 		MerchantDTO merchant = merchantService.queryMerchantByTenantId(getUser().getTenantId());
 		Long merchantId = null;
@@ -59,7 +55,8 @@ public class SecurityUtil {
 			merchantId = merchant.getId();
 		}
 		return merchantId;
-	}*/
+	}
+
 	/**
 	 * 转换明文jsonToken为用户对象
 	 * @param token

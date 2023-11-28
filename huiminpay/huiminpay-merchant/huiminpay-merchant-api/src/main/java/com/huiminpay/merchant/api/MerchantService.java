@@ -2,6 +2,8 @@ package com.huiminpay.merchant.api;
 
 import com.huiminpay.common.cache.domain.BusinessException;
 import com.huiminpay.merchant.dto.MerchantDTO;
+import com.huiminpay.merchant.dto.StaffDTO;
+import com.huiminpay.merchant.dto.StoreDTO;
 
 /**
  * @ClassName MerchantService
@@ -38,4 +40,36 @@ public interface MerchantService {
      * @throws BusinessException 业务异常
      */
     void applyMerchant(Long merchantId,MerchantDTO merchantDTO) throws BusinessException;
+
+
+    /**
+     \* 商户下新增门店
+     \* @param storeDTO
+     */
+    StoreDTO createStore(StoreDTO storeDTO) throws BusinessException;
+
+
+    /**
+     * 商户新增员工
+     * @param staffDTO
+     */
+    StaffDTO createStaff(StaffDTO staffDTO) throws BusinessException;
+
+
+
+    /**
+     * 为门店设置管理员
+     * @param storeId
+     * @param staffId
+     * @throws BusinessException
+     */
+    void bindStaffToStore(Long storeId, Long staffId) throws BusinessException;
+
+
+    /**
+     * 根据租户id查询商户的信息
+     * @param tenantId
+     * @return
+     */
+    public MerchantDTO queryMerchantByTenantId(Long tenantId);
 }

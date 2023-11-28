@@ -43,12 +43,21 @@ public class MerchantController {
     private SmsService smsService;
 
 
-    @GetMapping("/merchant/{id}")
+   /* @GetMapping("/merchant/{id}")
     @ApiOperation(value = "按照id查询商户")
     @ApiImplicitParam(paramType = "path", dataType = "Long", name = "id", value = "按照id查询", required = true)
     public MerchantDTO queryMerchantById(@PathVariable("id") Long id) {
         MerchantDTO merchantDTO = merchantService.queryMerchantById(id);
         return merchantDTO;
+    }*/
+
+    @ApiOperation("获取登录用户的商户信息")
+    @GetMapping(value="/my/merchants")
+    public MerchantDTO getMyMerchantInfo(){
+        // 从token 中获取商户id
+        Long merchantId = SecurityUtil.getMerchantId();
+        MerchantDTO merchant = merchantService.queryMerchantById(merchantId);
+        return merchant;
     }
 
     @GetMapping("/sms")

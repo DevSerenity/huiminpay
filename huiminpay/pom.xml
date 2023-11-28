@@ -8,6 +8,10 @@
         <module>huiminpay-merchant-application</module>
         <module>huiminpay-merchant</module>
         <module>huiminpay-transaction</module>
+        <module>huiminpay-gateway</module>
+        <module>huiminpay-uaa</module>
+        <module>huiminpay-user</module>
+
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
