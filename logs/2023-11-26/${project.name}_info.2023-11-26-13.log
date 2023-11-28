@@ -1,0 +1,36 @@
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,305 DEBUG [http-nio-56010-exec-4][HttpServletRequestWrapper.java:229] - Path = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,305 DEBUG [http-nio-56010-exec-4][HttpServletRequestWrapper.java:230] - Transfer-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,305 DEBUG [http-nio-56010-exec-4][HttpServletRequestWrapper.java:231] - Content-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,305 DEBUG [http-nio-56010-exec-4][HttpServletRequestWrapper.java:232] - Content-Length header = -1
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,306 DEBUG [http-nio-56010-exec-4][ZoneAwareLoadBalancer.java:112] - Zone aware logic disabled or there is only one zone
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,326 DEBUG [http-nio-56010-exec-2][HttpServletRequestWrapper.java:229] - Path = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,326 DEBUG [http-nio-56010-exec-2][HttpServletRequestWrapper.java:230] - Transfer-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,326 DEBUG [http-nio-56010-exec-2][HttpServletRequestWrapper.java:231] - Content-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,326 DEBUG [http-nio-56010-exec-2][HttpServletRequestWrapper.java:232] - Content-Length header = -1
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,327 DEBUG [http-nio-56010-exec-2][ZoneAwareLoadBalancer.java:112] - Zone aware logic disabled or there is only one zone
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,343 DEBUG [http-nio-56010-exec-3][HttpServletRequestWrapper.java:229] - Path = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,344 DEBUG [http-nio-56010-exec-3][HttpServletRequestWrapper.java:230] - Transfer-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,344 DEBUG [http-nio-56010-exec-3][HttpServletRequestWrapper.java:231] - Content-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,344 DEBUG [http-nio-56010-exec-3][HttpServletRequestWrapper.java:232] - Content-Length header = -1
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:00,345 DEBUG [http-nio-56010-exec-3][ZoneAwareLoadBalancer.java:112] - Zone aware logic disabled or there is only one zone
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:03,276 DEBUG [NettyServerWorker-6-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.70.136:50755, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.70.136
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:04,879 DEBUG [http-nio-56010-exec-7][HttpServletRequestWrapper.java:229] - Path = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:04,879 DEBUG [http-nio-56010-exec-7][HttpServletRequestWrapper.java:230] - Transfer-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:04,880 DEBUG [http-nio-56010-exec-7][HttpServletRequestWrapper.java:231] - Content-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:04,880 DEBUG [http-nio-56010-exec-7][HttpServletRequestWrapper.java:232] - Content-Length header = -1
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:04,880 DEBUG [http-nio-56010-exec-7][ZoneAwareLoadBalancer.java:112] - Zone aware logic disabled or there is only one zone
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:05,971 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:241] - List of Servers for uaa-service obtained from Discovery client: [192.168.226.1:56020]
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:05,971 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:246] - Filtered List of Servers for uaa-service obtained from Discovery client: [192.168.226.1:56020]
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:05,971 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:491] - LoadBalancer [uaa-service]: clearing server list (SET op)
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:05,971 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:507] - LoadBalancer [uaa-service]:  addServer [192.168.226.1:56020]
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:05,971 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:179] - Setting server list for zones: {unknown=[192.168.226.1:56020]}
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:05,971 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:491] - LoadBalancer [uaa-service_unknown]: clearing server list (SET op)
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:05,971 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:507] - LoadBalancer [uaa-service_unknown]:  addServer [192.168.226.1:56020]
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:07,639 DEBUG [http-nio-56010-exec-9][HttpServletRequestWrapper.java:229] - Path = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:07,639 DEBUG [http-nio-56010-exec-9][HttpServletRequestWrapper.java:230] - Transfer-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:07,639 DEBUG [http-nio-56010-exec-9][HttpServletRequestWrapper.java:231] - Content-Encoding = null
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:07,639 DEBUG [http-nio-56010-exec-9][HttpServletRequestWrapper.java:232] - Content-Length header = -1
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:07,640 DEBUG [http-nio-56010-exec-9][ZoneAwareLoadBalancer.java:112] - Zone aware logic disabled or there is only one zone
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:08,058 DEBUG [NettyClientWorker-4-2][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0xf7c36609, L:/192.168.226.1:50484 - R:/192.168.226.1:20880]], dubbo version: 2.7.3, current host: 192.168.70.136
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:08,058 DEBUG [NettyClientWorker-4-2][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-4-2, dubbo version: 2.7.3, current host: 192.168.70.136
+[${project.name}][${env:SERVER_PORT}] 2023-11-26 14:00:08,075 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:6) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
